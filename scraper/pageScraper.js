@@ -20,4 +20,6 @@ const scraperObject = {
 	}
 };
 
+
 module.exports = scraperObject;
+
