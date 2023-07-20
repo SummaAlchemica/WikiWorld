@@ -1,0 +1,12 @@
+crawler seeds
+https://en.m.wikipedia.org/wiki/Philosophy
+https://en.m.wikipedia.org/wiki/Cosmology
+https://en.m.wikipedia.org/wiki/Physics
+https://en.m.wikipedia.org/wiki/Language
+https://en.m.wikipedia.org/wiki/Art
+https://en.m.wikipedia.org/wiki/Anthropology
+https://en.m.wikipedia.org/wiki/Mathematics
+https://en.m.wikipedia.org/wiki/Biochemistry
+https://en.m.wikipedia.org/wiki/Geography
+https://en.m.wikipedia.org/wiki/Economics
+https://en.m.wikipedia.org/wiki/History
