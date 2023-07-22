@@ -3,6 +3,16 @@ Design details
 Version Alpha will be built using the MEAN stack, in JS/TS. 
 This will later be overhauled to C++/SFML for performance when rendering becomes important.
 
+DRAFT AREA
+
+PRE GAME FEATURES 
+
+In order to reduce duplicate articles through linguistic ambiguity, only the infinitive or noun form of a term should be documented (I.E. heart, cardiac, cardiology, and cardio should all link back to heart. Also terms which can be classified as both adjectives, nouns and/or verbs should be reduced. Carry vs carried contains the regular expression carr so must be recognized by )
+
+
+GAME MECHANICS
+When a user enters the website/app, they will be prompted to make an account or proceed as guest (read only, no progress or paths saved). Their account will contain:(pages visited and # of times visited, paths, skills/items earned, character class, friends, character design, messages, notifications, recommended readings)
+
 ARCHITECTURE
 Backend
     Links/nodes
@@ -35,7 +45,7 @@ Frontend
             Quadtree based rigid rendering
     GUI 3 
         Exploration game
-        Khan academy style questions to pass area
+        The most sensible way to track a person's progress would be to implement a modular khan academy style open source learning paths where each topic is de-contextualized and connected to all it neighbors. For instance, the topic of polymers could be approached from the bottom through organic chemistry, from the top through materials engineering, needing no linear hierarchy, only an anchor point.  
     GUI 4
         Building a ship
             Tiny galaxies/maps
