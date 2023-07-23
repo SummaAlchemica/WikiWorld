@@ -11,7 +11,7 @@ PRE GAME FEATURES
 MUSIC SORTING EXTENSION
 https://musicchartmaker.com
 based on ^
-you should be able to 
+you should be able to generated a treemap grid of all albums and songs as well as a weighted natural force directed graph of related albums with transparent lines as to give the illusion that they are floating by proximity to each other. Or put in place a sort of quantum entanglement Gravitational simulation. The force of each edge would be determined by factors of similarity such as (tempo, average volume, variation in volume, genre, presence of vocals etc) recorded as meta information attached to each file.
 
 GAME MECHANICS
 
