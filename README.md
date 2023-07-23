@@ -7,19 +7,43 @@ DRAFT AREA
 
 PRE GAME FEATURES 
 
-In order to reduce duplicate articles through linguistic ambiguity, only the infinitive or noun form of a term should be documented (I.E. heart, cardiac, cardiology, and cardio should all link back to heart. Also terms which can be classified as both adjectives, nouns and/or verbs should be reduced. Carry vs carried contains the regular expression carr so must be recognized by )
 
+MUSIC SORTING EXTENSION
+https://musicchartmaker.com
+based on ^
+you should be able to 
 
 GAME MECHANICS
-When a user enters the website/app, they will be prompted to make an account or proceed as guest (read only, no progress or paths saved). Their account will contain:(pages visited and # of times visited, paths, skills/items earned, character class, friends, character design, messages, notifications, recommended readings)
+
+
 
 ARCHITECTURE
 Backend
+    Node based 
+    Express server
+    Puppeteer scraper  
     Links/nodes
+        Graph nodes / pages
+            Each page will represent exactly one discrete topic. The goal is to make academia approachable and get an overview of each major idea, not to give the reader precise and niche information on each topic. This tool is a portal, not the destination. For instance, there will be one page on surgery, not a page for each kind of surgery (eye, heart, brain etc.) Each type of surgery will be mentioned but linked externally. Field expertise should not be required to use a route.  
+            In order to reduce duplicate articles through linguistic ambiguity, only the infinitive or noun form of a term should be documented (I.E. heart, cardiac, cardiology, and cardio should all link back to heart. Also terms which can be classified as both adjectives, nouns and/or verbs should be reduced. Carry vs carried contains the regular expression carr so must be recognized by )
         [NODE WEB SCRAPER](http://www.digitalocean.com/community/tutorials/how-to-scrape-a-website-using-node-js-and-puppeteer)
             Start with list of 12 seeds according to academic disciplines, index all other links/pages by steps removed from seed(s). Similar to hierarchical graph/tree but allows for cross connections
+            In order for each user to be able to customize their tree to reduce space used, they should be able to step through to a page one at a time by clicking a link which will add it to their personal chart. A web scraper 
         [Store links as JSON](https://stackoverflow.com/questions/43052290/representing-a-graph-in-json)
     Pages/tags
+        REVERSE TAG HIERARCHY
+        SCIENCE
+            Math
+            Engineering 
+        HUMANITIES
+            Language
+                Linguistics 
+                Languages
+                Literature
+                    Mythology
+            Art 
+                Static
+                Performance
         By common words (Push every word into array, sort, reduce duplicates and irrelevant words, compare arrays and if is found increment similarity calculator. Similarity determines connection force.)
         GUI NOTE(If page is not directly linked still display hover over brightness/saturation)
         OPTIONAL (use scraper to get topical lists of tags from https://relatedwords.org/relatedto/computer)
@@ -39,13 +63,13 @@ Backend
 Frontend
     GUI 1
         Obsidian as temporary front end, static map later
-    GUI 2 
+    GUI 2 GRAPH VISUALIZER 
         Graph visualizer 
             [Force directed graph/tree](https://observablehq.com/@d3/force-directed-graph)(https://observablehq.com/@d3/force-directed-tree)
             Quadtree based rigid rendering
-    GUI 3 
-        Exploration game
+    GUI 3: EXPLORATION GAME
         The most sensible way to track a person's progress would be to implement a modular khan academy style open source learning paths where each topic is de-contextualized and connected to all it neighbors. For instance, the topic of polymers could be approached from the bottom through organic chemistry, from the top through materials engineering, needing no linear hierarchy, only an anchor point.  
+        When a user enters the website/app, they will be prompted to make an account or proceed as guest (read only, no progress or paths saved). Their account will contain:(pages visited and # of times visited, paths, skills/items earned, character class, friends, character design, messages, notifications, recommended readings)
     GUI 4
         Building a ship
             Tiny galaxies/maps
